@@ -1,0 +1,163 @@
+/* Reset des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style du body */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    background-color: #2a2a72; /* Gradient moderne */
+    scroll-behavior: smooth;
+  }
+  
+  /* Style du header et navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: #16213e; /* Couleur foncée élégante */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6f61; /* Couleur de l'accent */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6f61;
+    transform: scale(1.1);
+  }
+  
+  /* Hero section avec animation */
+  .hero {
+    height: 90vh;
+    background: linear-gradient(to right, #2a2a72, #009efd);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+  }
+  
+  .hero button {
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .hero button:hover {
+    transform: scale(1.1);
+    background-color: #ff4a34;
+  }
+  
+  /* Animation pour l'effet de typewriter */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Style des sections */
+  section {
+    padding: 6rem 3rem;
+    text-align: center;
+  }
+  
+  section#about {
+    background-color: #16213e;
+    border-top: 3px solid #ff6f61;
+  }
+  
+  section#download {
+    background-color: #0f3460;
+    color: #f0f0f0;
+  }
+  
+  section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Bouton de téléchargement */
+  .download-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #00adb5;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #02d1db;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0f3460;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+  }
+  
+  /* Media Queries pour la réactivité */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero button {
+      font-size: 1rem;
+      padding: 0.8rem 2rem;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .logo {
+      font-size: 2rem;
+    }
+  }
+  
